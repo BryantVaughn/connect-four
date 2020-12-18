@@ -18,6 +18,7 @@ class Token {
 
 	/**
 	 * Getter to return HTML Token element associated with Token object
+	 * @return {DOMElement} The DOM element associated with this Token object
 	 */
 	get htmlToken() {
 		return document.getElementById(`${this.id}`);

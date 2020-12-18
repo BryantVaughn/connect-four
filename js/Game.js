@@ -18,6 +18,14 @@ class Game {
 	}
 
 	/**
+	 * Returns active player
+	 * @return {Object} player - The active player
+	 */
+	get activePlayer() {
+		return this.players.find((player) => player.active);
+	}
+
+	/**
 	 * Gets game ready for play
 	 */
 	startGame() {}
