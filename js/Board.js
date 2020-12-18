@@ -26,7 +26,7 @@ class Board {
 	 * Uses the drawSVGSpace method to render spaces to the board
 	 */
 	drawHTMLBoard() {
-		for (let column of spaces) {
+		for (let column of this.spaces) {
 			for (let space of column) {
 				space.drawSVGSpace();
 			}
