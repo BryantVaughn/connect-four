@@ -10,7 +10,7 @@ class Player {
 	/***
 	 * Creates token objects for player
 	 * @param  {integer} num - Number of token objects to be created
-	 * @return {array}   tokens - an array of new token objects
+	 * @return {Array}   tokens - An array of new Token objects
 	 */
 	createTokens(num) {
 		const tokens = [];
