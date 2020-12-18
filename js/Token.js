@@ -6,7 +6,7 @@ class Token {
 	}
 
 	/**
-	 * Creates a Token element and renders to board
+	 * Draws new HTML token
 	 */
 	drawHTMLToken() {
 		const tokenDiv = document.createElement('div');

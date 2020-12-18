@@ -23,7 +23,7 @@ class Board {
 	}
 
 	/**
-	 * Uses the drawSVGSpace method to render spaces to the board
+	 * Draws associated SVG spaces for all game spaces
 	 */
 	drawHTMLBoard() {
 		for (let column of this.spaces) {
