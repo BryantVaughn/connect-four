@@ -9,7 +9,7 @@ class Space {
 	}
 
 	/**
-	 * Creates circle SVGs for each space and renders them onto the board
+	 * Creates a circle SVG for a space
 	 */
 	drawSVGSpace() {
 		const svgSpace = document.createElement(
