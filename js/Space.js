@@ -9,6 +9,15 @@ class Space {
 	}
 
 	/**
+	 * Checks if space has an associated token to find its owner
+	 * @return {(null|Object)} Returns null or the owner object of the space's
+	 *                         associated token.
+	 */
+	get owner() {
+		return this.token ? this.token.owner : null;
+	}
+
+	/**
 	 * Creates a circle SVG for a space
 	 */
 	drawSVGSpace() {
