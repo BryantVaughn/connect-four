@@ -12,7 +12,7 @@ class Space {
 	 * Creates a circle SVG for a space
 	 */
 	drawSVGSpace() {
-		const svgSpace = document.createElement(
+		const svgSpace = document.createElementNS(
 			'http://www.w3.org/2000/svg',
 			'circle'
 		);

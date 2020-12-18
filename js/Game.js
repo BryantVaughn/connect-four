@@ -26,7 +26,11 @@ class Game {
 	}
 
 	/**
-	 * Gets game ready for play
+	 * Begins game
 	 */
-	startGame() {}
+	startGame() {
+		this.board.drawHTMLBoard();
+		this.activePlayer.activeToken.drawHTMLToken();
+		this.ready = true;
+	}
 }
