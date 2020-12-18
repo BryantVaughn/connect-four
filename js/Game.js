@@ -37,7 +37,9 @@ class Game {
 	/**
 	 * Switches active player
 	 */
-	switchPlayer() {}
+	switchPlayer() {
+		this.players.forEach((player) => (player.active = !player.active));
+	}
 
 	/**
 	 * Finds Space object to drop Token into, drops Token
@@ -141,5 +143,15 @@ class Game {
 		}
 
 		return win;
+	}
+
+	/**
+	 * Displays game over message.
+	 * @param {string} message - Game over message.
+	 */
+	gameOver(message) {
+		const gameOverElement = document.getElementById('game-over');
+		gameOverElement.textContent = message;
+		gameOverElement.style.display = 'block';
 	}
 }
